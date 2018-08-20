@@ -1,0 +1,71 @@
+@media (min-width: 992px) {
+  .header .logo {
+    width: 30%;
+    float: right;
+    text-align: right; } }
+
+.header .logo .theToggler {
+  position: absolute;
+  right: auto;
+  left: 15px; }
+
+@media (min-width: 992px) {
+  .header .navbar {
+    width: 70%;
+    float: right;
+    margin-top: 1em; } }
+
+.header .navbar li {
+  float: right; }
+  @media (max-width: 767px) {
+    .header .navbar li {
+      text-align: right; } }
+
+/* Start Services */
+@media (min-width: 992px) {
+  .services .serviceBox {
+    float: right; } }
+
+/* End Services */
+/* Start OurPlayers */
+@media (min-width: 768px) {
+  .ourPlayer .playerBox {
+    float: right; } }
+
+@media (min-width: 992px) {
+  .ourPlayer .playerBox {
+    text-align: right; } }
+
+/* End OurPlayers */
+/* Start Lorem */
+@media (min-width: 768px) {
+  .ourLorem .loremBox {
+    float: right; } }
+
+/* End Lorem */
+.footer .gallery,
+.footer .info,
+.footer .contact {
+  float: right; }
+
+@media (min-width: 768px) {
+  .footer .gallery .imageBox img {
+    float: right; } }
+
+@media (min-width: 768px) {
+  .footer .gallery .imageBox .text {
+    float: right; } }
+
+@media (min-width: 768px) {
+  .footer .copyright .text,
+  .footer .copyright .author {
+    float: right; }
+  .footer .copyright .author {
+    text-align: left; } }
+
+@media (max-width: 767px) {
+  .footer .copyright .text,
+  .footer .copyright .author {
+    text-align: center; }
+  .footer .copyright .text {
+    margin-bottom: 10px; } }

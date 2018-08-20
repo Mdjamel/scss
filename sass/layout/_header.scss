@@ -3,8 +3,20 @@
   overflow: hidden;
   border-bottom: 1px solid $greyColor;
   .logo {
-    width: 30%;
-    float: $floatLeft;
+    position: relative;
+
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      text-align: center;
+    }
+
+    @media #{$minMedium} {
+      width: 30%;
+      float: $floatLeft;
+      text-align: $textLeft;
+    }
+
     h1 {
       margin-bottom: 0;
       margin-top: 10px;
@@ -13,15 +25,43 @@
     }
   }
   .navbar {
+    overflow: hidden;
     width: 70%;
     float: $floatLeft;
     background-color: $redColor;
     border-radius: 15px;
+    width: 100%;
+
+    @media #{$minSmall} {
+      width: 100%;
+      float: none;
+      margin-top: 30px;
+      display: block !important;
+    }
+
+    @media #{$minMedium} {
+      width: 70%;
+      float: $floatLeft;
+      margin-top: 1em;
+    }
+    @media #{$maxMobile} {
+      border-radius: 0;
+      display: none;
+    }
     li {
       width: 20%;
       float: $floatLeft;
       font-size: 18px;
       text-align: center;
+      @media #{$maxMobile} {
+        display: block;
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+        padding-left: 10px;
+        text-align: $textLeft;
+      }
+
       a {
         display: block;
         padding: 20px 10px;

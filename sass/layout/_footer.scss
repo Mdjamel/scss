@@ -1,0 +1,134 @@
+.footer {
+  background-color: $greyColor;
+  overflow: hidden;
+  padding-top: 30px;
+  margin-top: 50px;
+  .gallery,
+  .info,
+  .contact {
+    float: $floatLeft;
+  }
+  .gallery {
+    @media #{$minSmall} {
+      width: 100%;
+    }
+
+    @media #{$minMedium} {
+      width: 50%;
+    }
+
+    .imageBox {
+      overflow: hidden;
+      img {
+        @media #{$minSmall} {
+          float: $floatLeft;
+        }
+        width: 150px;
+        height: 150px;
+        border: 2px solid #fff;
+        padding: 1px;
+      }
+      .text {
+        @media #{$minSmall} {
+          float: $floatLeft;
+          margin-right: 15px;
+          margin-left: 15px;
+          width: calc(100% - 180px);
+        }
+
+        h4 {
+          color: $redColor;
+          margin: 10px 0 0px;
+        }
+        p {
+          color: #555;
+          line-height: 1.9;
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+  .info {
+    @media #{$minSmall} {
+      width: 50%;
+      /* margin-right: 15px;
+      margin-left: 15px; */
+    }
+
+    @media #{$minMedium} {
+      width: 25%;
+    }
+
+    ul {
+      color: #555;
+      line-height: 1.6;
+      span {
+        color: $redColor;
+      }
+    }
+    h4 {
+      color: #555;
+      font-weight: bold;
+      margin-bottom: 0;
+    }
+    p {
+      color: #555;
+      margin-top: 8px;
+    }
+  }
+  .contact {
+    @media #{$minSmall} {
+      width: 50%;
+    }
+
+    @media #{$minMedium} {
+      width: 25%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      border: 1px solid #888;
+      padding: 10px;
+      margin-bottom: 5px;
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    textarea {
+      height: 140px;
+    }
+  }
+  .sectionTitle {
+    color: #444;
+    font-weight: normal;
+  }
+  .copyright {
+    padding: 25px 0;
+    border-top: 1px solid #c5c5c5;
+    color: #444;
+    overflow: hidden;
+    margin-top: 30px;
+
+    @media #{$minSmall} {
+      .text,
+      .author {
+        float: $floatLeft;
+        width: 50%;
+      }
+      .author {
+        text-align: $textRight;
+      }
+    }
+
+    @media #{$maxMobile} {
+      .text,
+      .author {
+        text-align: center;
+      }
+      .text {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

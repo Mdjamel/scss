@@ -1,2 +1,115 @@
+@import "sass/helpers/variables";
+
 $floatLeft: right;
 $floatRight: left;
+
+$textRight: left;
+$textLeft: right;
+
+.header {
+  .logo {
+    @media #{$minMedium} {
+      width: 30%;
+      float: $floatLeft;
+      text-align: $textLeft;
+    }
+    .theToggler {
+      position: absolute;
+      right: auto;
+      left: 15px;
+    }
+  }
+  .navbar {
+    @media #{$minMedium} {
+      width: 70%;
+      float: $floatLeft;
+      margin-top: 1em;
+    }
+
+    li {
+      float: $floatLeft;
+
+      @media #{$maxMobile} {
+        text-align: $textLeft;
+      }
+    }
+  }
+}
+
+/* Start Services */
+.services {
+  .serviceBox {
+    @media #{$minMedium} {
+      float: $floatLeft;
+    }
+  }
+}
+/* End Services */
+
+/* Start OurPlayers */
+.ourPlayer {
+  .playerBox {
+    @media #{$minSmall} {
+      float: $floatLeft;
+    }
+
+    @media #{$minMedium} {
+      text-align: $textLeft;
+    }
+  }
+}
+/* End OurPlayers */
+
+/* Start Lorem */
+.ourLorem {
+  .loremBox {
+    @media #{$minSmall} {
+      float: $floatLeft;
+    }
+  }
+}
+/* End Lorem */
+
+.footer {
+  .gallery,
+  .info,
+  .contact {
+    float: $floatLeft;
+  }
+  .gallery {
+    .imageBox {
+      img {
+        @media #{$minSmall} {
+          float: $floatLeft;
+        }
+      }
+      .text {
+        @media #{$minSmall} {
+          float: $floatLeft;
+        }
+      }
+    }
+  }
+
+  .copyright {
+    @media #{$minSmall} {
+      .text,
+      .author {
+        float: $floatLeft;
+      }
+      .author {
+        text-align: $textRight;
+      }
+    }
+
+    @media #{$maxMobile} {
+      .text,
+      .author {
+        text-align: center;
+      }
+      .text {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
